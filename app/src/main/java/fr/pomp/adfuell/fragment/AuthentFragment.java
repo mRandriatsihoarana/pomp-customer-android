@@ -66,8 +66,8 @@ public class AuthentFragment extends BaseFragment {
         _edButterKniff.view(this, v);
         _mainActivity.headerShow(false);
         _mainActivity.lockedDrawer(true);
-        _emailEditText.setText("augustin@bicworld.com");
-        _passEditText.setText("augustin@bicworld.com");
+        /*_emailEditText.setText("augustin@bicworld.com");
+        _passEditText.setText("augustin@bicworld.com");*/
         /*_emailEditText.setText("dev@pompfuel.com");
         _passEditText.setText("dev@pompfuel.com");*/
 
