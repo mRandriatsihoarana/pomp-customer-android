@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pomp Fuel</string>
+    <string name="text_carburant_demande">FUEL DELIVERY</string>
+    <string name="text_carb">ON DEMAND</string>
+
+    <!--Login Beging-->
+    <string name="hint_email">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="text_pass_oublie">Forgot password</string>
+    <string name="text_creer_compte">Create account</string>
+    <string name="date_format">EEEE MM-dd-yyyy hh:mm a</string>
+    <string name="date_format_sans_heure">EEEE dd MMMM yyyy \n hh:mm a</string>
+    <string name="date_format_history">dd/MM/yyyy hh:mm a</string>
+    <string name="url_faq">https://www.pompfuel.com/en/faq-mobile</string>
+    <!--Login End-->
+
+    <!--Creer un compte Beging-->
+    <!--<string name="text_connect_facebook">Connect with facebook</string>
+    <string name="text_or">or</string>-->
+    <string name="hint_tel">Phone</string>
+    <string name="hint_firstname">Firstname</string>
+    <string name="hint_lastname">Lastname</string>
+    <string name="text_new_compte">New account</string>
+    <!--Creer un compte End-->
+
+    <string name="to_validate">To Validate</string>
+    <string name="incoming">Incoming</string>
+    <string name="to_be_paid">To Be Paid</string>
+    <string name="paid">Paid</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="failed">Failed</string>
+</resources>

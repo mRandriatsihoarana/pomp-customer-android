@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">Pomp Fuel</string>
+    <string name="text_carburant_demande">à la demande</string>
+    <string name="text_carb">Carburant</string>
+    <string name="version">Version 1.0.0</string>
+
+    <!-- TODO: Remove or change this placeholder _text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="ed_db_name">db.sqlite</string>
+    <string name="ed_db_verion">1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="next">Next</string>
+    <string name="invalid_email">Adresse email incorrecte</string>
+    <string name="invalid_password">Votre mot de passe doit contenir au minimum 8 caractères</string>
+    <string name="invalid_phone">Votre numéro de téléphone doit contenir 10 chiffres</string>
+    <string name="empty_email">Le champ adresse email ne peut pas être vide !! Veuillez saisir votre adresse email</string>
+    <string name="empty_pass">Le champ mot de passe ne peut pas être vide !! Veuillez saisir votre mot de passe</string>
+    <string name="invalid_email_pass">Adresse email ou mot de passe incorrecte</string>
+    <string name="empty_lastname">Le champ nom ne peut pas être vide !! Veuillez saisir votre nom</string>
+    <string name="empty_firstname">Le champ prénom ne peut pas être vide !! Veuillez saisir votre prénom</string>
+    <string name="empty_phone">Le champ téléphone ne peut pas être vide !! Veuillez saisir votre téléphone</string>
+    <string name="empty_fields">Veuillez remplir les champs suivants : </string>
+    <string name="empty_field">Veuillez remplir le champ</string>
+    <string name="succes_add_car">Véhicule ajouté avec succès</string>
+    <string name="succes_delete_car">Véhicule supprimé avec succès</string>
+    <string name="succes_add_carte">Carte ajoutée avec succès</string>
+    <string name="succes_delete_carte">Carte supprimée avec succès</string>
+    <string name="succes_create_account">Compte créé avec succès</string>
+    <string name="succes_message">Message envoyé avec succès</string>
+    <string name="fail_message">Il y a une erreur pendant l\'envoie du message</string>
+    <string name="empty_message_field">Veuillez remplir le champ message</string>
+    <string name="text_message">Vous n\'avez pas de livraison disponible ? Spécifiez-nous votre requete et nous reviendrons vers vous dès que possible !</string>
+    <string name="text_info_incomplet">Veuillez remplir toutes les informations</string>
+    <string name="empty_schedules">Vous ne pouvez pas commander pour le moment. Veuillez envoyer votre demande dans la rubrique \"Ma localisation\"</string>
+
+
+    <!--Login Beging-->
+    <string name="hint_email">Adresse email</string>
+    <string name="empty_email_suite">afin que nous vous envoyions un email de réinitialisation de mot de passe.</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="button_login">Se connecter</string>
+    <string name="text_pass_oublie">Mot de passe oublié ?</string>
+    <string name="text_creer_compte">Créer un compte</string>
+    <!--Login End-->
+
+    <!--Creer un compte Beging-->
+    <string name="text_connect_facebook">Connect with facebook</string>
+    <string name="text_or">or</string>
+    <string name="hint_tel">Tel</string>
+    <string name="hint_firstname">Prénom</string>
+    <string name="hint_lastname">Nom</string>
+    <string name="text_new_compte">Nouveau compte</string>
+    <!--Creer un compte End-->
+
+    <!--Ajouter une carte Beging-->
+    <string name="button_ajouter_carte">Ajouter une carte</string>
+    <string name="hint_titulaire">Titulaire</string>
+    <string name="hint_nom">Nom du porteur</string>
+    <string name="text_nom">Nom</string>
+    <string name="hint_carte_name">Nom de la carte</string>
+    <string name="hint_numero">Numéro</string>
+    <string name="hint_num_carte">Numéros de la carte</string>
+    <string name="hint_date_expiration">Date d\'expiration</string>
+    <string name="hint_date_format">MM/YY</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="hint_cvv_code">CVV code</string>
+    <string name="hint_code_postal">Code postal</string>
+    <string name="text_ou">ou</string>
+    <string name="text_scan_carte">Scanner votre carte</string>
+    <!--Ajouter une carte End-->
+    <!--Slider menu Beging-->
+    <string name="text_nous_contacter">Nous contacter</string>
+    <string name="text_commander">Commander</string>
+    <string name="text_mes_commander">Mes Commandes</string>
+    <string name="text_paiement">Paiement</string>
+    <string name="text_historique">Historique</string>
+    <string name="text_parainage">Parainage</string>
+    <string name="text_propos">À propos</string>
+    <string name="text_localisation_">Localisation</string>
+    <string name="text_compte">Mon conpte</string>
+    <!--Slider menu End-->
+
+    <!--Ajouter une voiture Beging-->
+    <string name="text_marque">Marque</string>
+    <string name="text_type">Type</string>
+    <string name="text_immatriculation">Plaque d\'immatriculation</string>
+    <string name="text_couleur">Couleur</string>
+    <string name="text_carburant">Carburant</string>
+    <string name="text_reservoir">Volume réservoir</string>
+    <string name="hint_marque">SMART</string>
+    <string name="hint_type">FORTWO</string>
+    <string name="hint_immatriculation">DA-940-QR</string>
+    <string name="hint_carburant">Diezel</string>
+    <string name="hint_couleur">Noir</string>
+    <string name="hint_reservoir">40</string>
+    <string name="button_add_car">Ajouter un véhicule</string>
+    <string name="text_new_car">Ajouter un véhicule</string>
+    <string name="required_marque"> Vous devez remplir ce champ \"Marque\"</string>
+    <string name="required_type"> Vous devez remplir ce champ \"Type\"</string>
+    <string name="required_immatriculation"> Vous devez remplir ce champ \"Plaque d\'immatriculation\"</string>
+    <string name="required_carburant"> Vous devez remplir ce champ \"Carburant\"</string>
+    <string name="required_couleur"> Vous devez remplir ce champ \"Couleur\"</string>
+    <string-array name="array_carburant">
+        <item>diesel</item>
+        <item>unleaded95</item>
+        <item>unleaded98</item>
+    </string-array>
+    <string name="button_update_car">Modifier un véhicule</string>
+    <!--Ajouter une voiture End-->
+    <string name="liste_carte">Liste des cartes</string>
+    <string name="carte">Carte</string>
+    <string name="msg_no_carte_save">Aucune carte n\'est enregistrée</string>
+
+    <!--Profile Beging-->
+    <string name="text_email">victorfeuillat@gmail.com</string>
+    <string name="text_phone">0650505696</string>
+    <!--<string name="text_carburant">Essence 98</string>-->
+    <string name="text_type_car">SMART Fortwo DA-584-65</string>
+    <string name="text_name">VICTOR FEUILLAT</string>
+    <string name="button_logout">Déconnexion</string>
+    <string name="profil">Profil</string>
+    <string name="text_ajouter_voiture">Ajouter une voiture</string>
+    <string name="msg_no_cart_save">Aucune carte n\'est enregistrée</string>
+    <string name="text_voiture">Voiture</string>
+    <!--Profile End-->
+
+    <!--Liste voiture Beging-->
+    <string name="text_no_car_list">Aucun véhicule n\'est enregistrée</string>
+    <!--Liste voiture End-->
+
+    <string name="text_commander_maintenant">Commander maintenant</string>
+    <string name="invalid_carte_number">Numero de la carte invalide</string>
+
+
+    <!--Reinitialiser mot de pass Beging-->
+    <string name="text_pass_title">Réinitialisation mot de passe réussie</string>
+    <string name="text_pass_message">Votre mot de passe a bien été réinitialisé, veuillez vérifier votre boîte mail</string>
+    <!--Reinitialiser mot de pass End-->
+
+    <!--Ma localisation Beging-->
+    <string name="text_confirmation">Confirmation</string>
+    <string name="text_localisation">Ma localisation</string>
+    <string name="text_entreprise">Entreprise</string>
+    <string name="hint_entreprise">Dalmer</string>
+    <string name="text_place">Place N°</string>
+    <string name="hint_place">705</string>
+    <string name="text_note">Notes</string>
+    <string name="hint_note">Voiture grise</string>
+    <string name="text_parking">Parking</string>
+    <string name="hint_parking">Parking Océan</string>
+    <string-array name="array_parking">
+        <item>Parking Ocèan</item>
+        <item>Parking 1</item>
+        <item>Parking 1</item>
+    </string-array>
+    <string name="msg_no_localisation">Aucune localisation n\'est enregistrée</string>
+    <!--Ma localisation End-->
+
+    <!--Mon horaire Beging-->
+    <string name="text_horaire">Mon horaire</string>
+    <string name="text_lundi">Lundi 10:00 AM</string>
+    <string name="text_mardi">Mardi 12:00 AM</string>
+    <string name="text_jeudi">Jeudi 14:00 AM</string>
+    <!--Mon horaire End-->
+
+    <!--Mon vehicule Beging-->
+    <string name="text_vehicule">Véhicules</string>
+    <!--Mon vehicule End-->
+
+    <!--Ma commande Beging-->
+    <string name="text_commande">Ma commande</string>
+    <string name="text_diesel">Diesel</string>
+    <string name="text_diesel_premium">Diesel Premium</string>
+    <string name="text_full">FULL</string>
+    <string name="text_full_resume">Faire le plein</string>
+    <string name="text_price_liter">Prix du litre</string>
+    <string name="text_commande_amount">Commander un montant défini</string>
+    <string name="text_commande_fillup">Commander le plein complet</string>
+    <!--Ma commande End-->
+
+    <!--Recapitulatif Beging-->
+    <string name="text_recapitulatif">Récapitulatif</string>
+    <string name="text_adresse_livraison">Adresse livraison</string>
+    <string name="text_entreprise_name">Entreprise :</string>
+    <string name="text_adresse">135 avenue des Champs-Élysées</string>
+    <string name="text_place_recap">75008 Paris</string>
+    <string name="text_type_essence">Type essence</string>
+    <string name="text_gazole_98">Gazole 98</string>
+    <string name="text_prix_litre">Prix du litre 1,376€</string>
+    <string name="text_carte">Carte</string>
+    <string name="text_5995">**** **** 5995</string>
+    <string name="text_changer">Changer</string>
+    <string name="text_total">Total</string>
+    <string name="text_total_value">56,99€ TTC</string>
+    <!--Recapitulatif End-->
+
+    <string name="text_no">Non</string>
+    <string name="text_yes">Oui</string>
+    <string name="text_ok">Ok</string>
+    <!-- suppression -->
+    <string name="supress_carte">Etes vous sûr de vouloir supprimer la carte?</string>
+    <string name="supress_voiture">Etes vous sûr de vouloir supprimer la voiture?</string>
+
+    <string name="carte_invalide_number_msg">Numero invalide</string>
+    <string name="text_add">Ajouter</string>
+    <string name="text_carte_invalide_number">Numéro invalide</string>
+    <string name="text_carte_invalide_cvc">CVC invalide</string>
+    <string name="text_carte_invalide_date">Date invalide</string>
+    <string name="text_carte_invalide_name_vide">Le nom ne doit pas etre vide.</string>
+    <string name="text_carte_invalide_code_postal">Le code postal ne doit pas etre vide.</string>
+
+    <string name="text_suppress_error">Erreur de suppression.</string>
+    <string name="text_modif_error">Erreur de modification.</string>
+    <string name="text_modifier">Modifier</string>
+    <string name="text_modifier_la_carte">Modifier la carte</string>
+    <string name="text_modifier_success">Modification réussie.</string>
+    <string name="text_server_error">Erreur au niveau du serveur</string>
+    <string name="text_create_on">Crée le</string>
+    <string name="date_format">EEEE dd-MM-yyyy HH:mm</string>
+    <string name="date_format_sans_heure">EEEE dd MMMM yyyy \n HH:mm</string>
+    <string name="date_format_history">dd/MM/yyyy HH:mm</string>
+    <string name="text_parking_number">N° Parking</string>
+    <string name="text_status">Status</string>
+    <string name="commande_deja_passe">Vous avez déjà passé la même commande</string>
+    <string name="commande_envoye">Commande envoyé avec succés</string>
+    <string name="commande_non_envoye">Commande non envoyée</string>
+    <string name="text_commande_cancelled_btn">Annuler la commande</string>
+    <string name="text_commande_update_btn">Modifier la commande</string>
+    <string name="empty_placenumber">Vous n\'avez rien modifié</string>
+    <string name="succes_commande_update">Commande modifié avec succés</string>
+    <string name="succes_commande_cancel">Commande annulé avec succés</string>
+    <string name="confirme_commande_cancel">Voulez-vous vraiment annuler la commande?</string>
+    <string name="text_charge_annulation_commade">On va charger 5€ de frais d\'annulation (moins de 24 heures avant la livraison).</string>
+    <string name="text_fillup_commande">plein complet commandé</string>
+    <string name="text_commande_traitement">Votre commande est en cours de traitement</string>
+    <string name="text_commande_accept">Commande acceptée</string>
+    <string name="text_commande_livraison">Livraison en cours</string>
+    <string name="text_commande_complete">Complete</string>
+    <string name="url_faq">https://www.pompfuel.com/fr/faq-mobile</string>
+    <string name="text_faq">FAQ</string>
+    <string name="text_history_empty">Vous n\'avez pas encore commandé de ravitaillement.</string>
+    <string name="text_propos_adress">Pomp SAS 5 Rue de Rochechouart, 75009 Paris, France Besoin d\’informations complémentaires ?</string>
+    <string name="text_propos_besoin">Besoin d\’informations complémentaires ?</string>
+    <string name="text_propos_rue">5 Rue de Rochechouart, 75009 Paris, France</string>
+    <string name="text_propos_pomp_as">Pomp SAS</string>
+    <string name="text_propos_contact">Nos conseillers sont à votre disposition au:</string>
+    <string name="text_propos_numero">+33 1 76 44 01 43</string>
+    <string name="text_schedule_titre">Bienvenue dans votre station service mobile</string>
+    <string name="text_schedule_merci">Merci pour votre inscription ! Un équipier POMP va prendre contact avec vous rapidement. Très bientôt vous n\'aurez plus à vous déplacer pour faire votre plein.</string>
+    <string name="text_schedule_question">Pour toute question n\'hésitez pas à nous contacter au +33 1 76 44 01 43 ou à support@pompfuel.com . Si vous souhaitez nous envoyer un message, c\'est ici : </string>
+    <string name="message">Message</string>
+    <string name="btn_envoyer">Envoyer</string>
+    <string name="text_reapprovisonnement_titre">Il n\'y a pas encore de réapprovisonnement de prévu !</string>
+    <string name="text_reapprovisonnement_veuillez">Veuillez utiliser ce formulaire pour organiser un réapprovisonnement : </string>
+    <string name="faillure_request">Erreur lors de la tentative de connection.</string>
+
+    <string name="to_validate">À valider</string>
+    <string name="incoming">À Venir</string>
+    <string name="to_be_paid">À Payer</string>
+    <string name="paid">Payée</string>
+    <string name="cancelled">Annulée</string>
+    <string name="failed">Échouée</string>
+    <string name="button_add_carte">Ajouter une carte bleue</string>
+
+</resources>

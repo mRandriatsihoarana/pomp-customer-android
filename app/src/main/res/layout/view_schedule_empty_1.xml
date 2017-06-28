@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/text_schedule_titre"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        style="@style/textview_custom_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_schedule_merci"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/car_no_schedule" />
+
+    <TextView
+        style="@style/textview_custom_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_schedule_question"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_horaire"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/header_height"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            style="@style/textview_custom_3"
+            android:id="@+id/edt_message_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/message" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#318CE7</color>
+    <color name="colorPrimaryDark">#677179</color>
+    <color name="colorAccent">#40ff79</color>
+    <color name="color_loading">#40764b</color>
+
+    <color name="transparent">#0000</color>
+    <color name="fondBleu">#5DDDF2</color>
+    <color name="dark_blue">#038d9d</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gris">#A9A9A9</color>
+    <color name="gris_separator">#ebebeb</color>
+    <color name="gris_fonce">#787b7d</color>
+    <color name="gris_claire">#cacbcd</color><!--e2e3e7  3b4044-->
+    <color name="gris_fonce_primary">#3b4044</color>
+    <color name="gris_selector_button">#929292</color><!-- ededed -->
+    <color name="gris_selector_menu">#5c5c5c</color>
+    <color name="fond_circle_progress_primary">#d1fbf1</color>
+    <color name="fond_circle_progress_second">#62f9c1</color>
+</resources>

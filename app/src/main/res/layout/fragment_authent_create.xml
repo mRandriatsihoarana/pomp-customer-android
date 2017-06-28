@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_green" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/login_padding_left"
+        android:paddingRight="@dimen/login_padding_left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/account_view_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="73dp"
+                android:src="@drawable/logo_p"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/create_compte_lastname"
+                    style="@style/style_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height"
+                    android:hint="@string/hint_lastname"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <EditText
+                    android:id="@+id/create_compte_firstname"
+                    style="@style/style_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height"
+                    android:hint="@string/hint_firstname"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <EditText
+                    android:id="@+id/create_compte_email"
+                    style="@style/style_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <EditText
+                    android:id="@+id/create_compte_password"
+                    style="@style/style_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <Spinner
+                        android:id="@+id/spn_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_marginLeft="5dp"
+                        android:entries="@array/array_parking"
+                        android:gravity="left|start"
+                        android:paddingLeft="5dp"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="textStart"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/create_compte_phone"
+                        style="@style/style_auth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/textview_height"
+                        android:hint="@string/hint_tel"
+                        android:inputType="phone"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="15dp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/create_compte_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_height"
+                android:layout_gravity="bottom"
+                android:background="@drawable/selector_auth"
+                android:text="@string/text_creer_compte"
+                android:textAllCaps="false"
+                android:textColor="@color/gris" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

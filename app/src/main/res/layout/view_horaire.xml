@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/expendable_padding">
+
+        <LinearLayout
+            android:id="@+id/up_header_horaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_car"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_horaire"
+                android:textColor="@color/gris_fonce"
+                android:textSize="@dimen/size_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/horaire_list_contener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ui_empty_horaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="17dp"
+                    android:paddingTop="17dp"
+                    android:text="Aucune horaire disponible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/txv_horaire_1"
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="17dp"
+                    android:paddingTop="17dp"
+                    android:text="@string/text_lundi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/txv_horaire_2"
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="17dp"
+                    android:paddingTop="17dp"
+                    android:text="@string/text_mardi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/txv_horaire_3"
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="17dp"
+                    android:paddingTop="17dp"
+                    android:text="@string/text_jeudi" />
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/up_horaire_container"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/login_padding_left"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:padding="@dimen/expendable_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_blue" />
+</RelativeLayout>

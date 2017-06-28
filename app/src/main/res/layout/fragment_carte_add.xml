@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    -->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/header_height"
+        android:background="@color/white">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:paddingTop="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_padding_left"
+                android:layout_marginRight="@dimen/login_padding_left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/login_padding_left"
+                    android:paddingRight="@dimen/login_padding_left">
+
+                    <TextView
+                        style="@style/textview_custom_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_nom" />
+
+                    <EditText
+                        android:id="@+id/add_carte_titulaire"
+                        style="@style/edittext_custom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_carte_name"
+                        android:inputType="text"
+                        android:paddingLeft="5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/login_padding_left"
+                    android:paddingRight="@dimen/login_padding_left">
+
+                    <TextView
+                        style="@style/textview_custom_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hint_numero" />
+
+                    <com.braintreepayments.cardform.view.CardEditText
+                        android:id="@+id/add_carte_numero"
+                        style="@style/edittext_custom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_num_carte"
+                        android:inputType="number|textNoSuggestions"
+                        android:paddingLeft="5dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/login_padding_left"
+                    android:paddingRight="@dimen/login_padding_left">
+
+                    <TextView
+                        style="@style/textview_custom_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hint_date_expiration" />
+
+                    <com.braintreepayments.cardform.view.ExpirationDateEditText
+                        android:id="@+id/add_carte_date_expiration"
+                        style="@style/edittext_custom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_date_format"
+                        android:inputType="date"
+                        android:paddingLeft="5dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/login_padding_left"
+                    android:paddingRight="@dimen/login_padding_left">
+
+                    <TextView
+                        style="@style/textview_custom_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hint_cvv" />
+
+                    <com.braintreepayments.cardform.view.CvvEditText
+                        android:id="@+id/add_carte_cvv"
+                        style="@style/edittext_custom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_cvv_code"
+                        android:inputType="date"
+                        android:paddingLeft="5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/login_padding_left"
+                    android:paddingRight="@dimen/login_padding_left">
+
+                    <TextView
+                        style="@style/textview_custom_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hint_code_postal" />
+
+                    <com.braintreepayments.cardform.view.PostalCodeEditText
+                        android:id="@+id/add_carte_code_postal"
+                        style="@style/edittext_custom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textview_height"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_code_postal"
+                        android:inputType="date"
+                        android:paddingLeft="5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/text_ou"
+                    android:textColor="@color/gris" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/add_carte_scan_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/textview_height"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_scan_carte"
+                            android:textColor="@color/gris" />
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="17dp"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/scan_card_icon" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_carte_scan_votre_carte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/add_carte_scan_container"
+                        android:layout_alignTop="@id/add_carte_scan_container"
+                        android:background="@color/transparent" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gris" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/create_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_order"
+        android:text="@string/text_add"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout><!-- </ScrollView> -->
+
+
+

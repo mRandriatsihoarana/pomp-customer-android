@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:textSize">@dimen/size_small</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:textSize">@dimen/size_small</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textview_custom_1">
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">@color/gris_claire</item>
+    </style>
+
+    <style name="textview_custom_2">
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">@color/gris</item>
+    </style>
+
+    <style name="textview_title">
+        <item name="android:textSize">@dimen/size_titre</item>
+        <item name="android:textColor">@color/gris_fonce_primary</item>
+    </style>
+
+    <style name="textview_custom_3">
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">@color/gris_fonce</item>
+    </style>
+
+    <style name="edittext_custom" parent="textview_custom_2">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/gris_claire</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="style_auth" parent="textview_custom_2">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/gris_claire</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="style_story_detail_text" parent="textview_custom_2">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_story_detail_separtor">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="style_story_detail_edittext" parent="textview_custom_2">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/gris_claire</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+</resources>

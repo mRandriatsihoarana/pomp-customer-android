@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pomp Fuel</string>
+    <string name="text_carburant_demande">auf Anfrage</string>
+    <string name="text_carb">Die Kraftstoffzufuhr</string>
+
+    <string name="hello_blank_fragment"></string>
+    <string name="ed_db_name">db.sqlite</string>
+    <string name="ed_db_verion">1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">hinzufügen</string>
+    <string name="next">Nächster</string>
+    <string name="invalid_email">ungültige E-Mail</string>
+    <string name="invalid_password">8 Zeichen für das Passwort-Feld</string>
+    <string name="text_commander_maintenant">Jetzt bestellen</string>
+
+    <!--Login Beging-->
+    <string name="hint_email">E-Mail-Addresse</string>
+    <string name="hint_password">Passwort</string>
+    <string name="button_login">Einloggen</string>
+    <string name="text_pass_oublie">Passwort vergessen?</string>
+    <string name="text_creer_compte">Kundenkonto eröffnen</string>
+    <!--Login End-->
+
+    <!--Creer un compte Beging-->
+    <!--<string name="text_connect_facebook">Connect with facebook</string>
+    <string name="text_or">or</string>-->
+    <string name="hint_tel">Tel</string>
+    <string name="hint_firstname">Vorname</string>
+    <string name="hint_lastname">Nachname</string>
+    <string name="text_new_compte">Neues Konto</string>
+    <!--Creer un compte End-->
+
+    <string name="url_faq">https://www.pompfuel.com/de/faq-mobile</string>
+</resources>

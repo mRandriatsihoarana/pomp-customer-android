@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/button_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="@dimen/login_padding_left"
+        android:paddingTop="5dp"
+        android:background="@drawable/selector_menu">
+
+        <TextView
+            android:id="@+id/slider_menu_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="40dp"
+            android:text="@string/text_compte"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="12dp"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_down" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:id="@+id/button_commander"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_commander"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_commander"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_order"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_historique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_historique"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_mes_commander"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_story"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_paiement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_paiement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_paiement"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_paye"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_vehicule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_vehicule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_vehicule"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_vehicule"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_localisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_localisation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_localisation_"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_localisation"
+                        android:layout_width="12dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_parainage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_parainage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_parainage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_parain"
+                        android:layout_width="12dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/button_propos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_propos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_propos"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_propos"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/selector_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/slider_menu_faq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_faq"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/slider_menu_right_faq"
+                        android:layout_width="7dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/menu_right_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/slider_menu_nous_contacter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:text="@string/text_nous_contacter"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_menu" />
+    </LinearLayout>
+
+</LinearLayout>
+

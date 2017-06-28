@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/expendable_padding">
+
+        <LinearLayout
+            android:id="@+id/up_header_vehicule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_car"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="31dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_vehicule"
+                android:textColor="@color/gris_fonce"
+                android:textSize="@dimen/size_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vehicule_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_no_car_list"
+                android:textColor="@color/gris"
+                android:textSize="@dimen/size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vehicule_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:text="@string/text_immatriculation" />
+
+                <Spinner
+                    android:id="@+id/spn_imat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_marginLeft="5dp"
+                    android:entries="@array/array_parking"
+                    android:gravity="right|end"
+                    android:paddingLeft="5dp"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_marque" />
+
+                <TextView
+                    android:id="@+id/edt_marque"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_type" />
+
+                <TextView
+                    android:id="@+id/edt_type"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_couleur" />
+
+                <TextView
+                    android:id="@+id/edt_couleur"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/up_vehicule_container"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/login_padding_left"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:padding="@dimen/expendable_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_blue" />
+</RelativeLayout>

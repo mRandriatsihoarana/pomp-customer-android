@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5efc6b7ef084df5705530fe789f1599d4a0cfec3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.2.8-SNAPSHOT\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c710df60f78e9a4e54e9b1d19a174178bb827c07">
+        <dex dex="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\pl.droidsonroids.gif-android-gif-drawable-1.2.8-SNAPSHOT_40c4cd18a64b73027e223fb8aa111a1148b22ad7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.2.8-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c710df60f78e9a4e54e9b1d19a174178bb827c07">
+        <dex dex="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.2.8-SNAPSHOT_40c4cd18a64b73027e223fb8aa111a1148b22ad7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c74ec2c27c41a137f2cbd9d68851dcd7b04d0eb2">
+        <dex dex="F:\Application\android\space\Pomp\pomp-customer-android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_3798d49e302a6c82c48b54adee05d6eec4b4bdf4\classes.dex" />
+    </item>
+
+</items>

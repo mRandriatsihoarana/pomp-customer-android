@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OrderHomeFragment">
+    <!--<EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/id_order_search"
+        android:drawableLeft="@drawable/places_ic_search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/gris"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/header_height">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+        <!--<ImageView
+            android:id="@+id/id_order_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_home"/>-->
+
+        <include
+            layout="@layout/view_recapitulatif"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+             />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_list_car"
+        android:text="@string/text_confirmation"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

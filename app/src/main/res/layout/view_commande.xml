@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/expendable_padding">
+
+        <LinearLayout
+            android:id="@+id/up_header_commande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_car"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                android:src="@drawable/bid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_commande"
+                android:textColor="@color/gris_fonce"
+                android:textSize="@dimen/size_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    android:id="@+id/txt_type_carburant"
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/text_diesel_premium" />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_price_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/selector_order"
+                android:minHeight="@dimen/textview_height"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/text_commande_amount"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_fill_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_order"
+                android:minHeight="@dimen/textview_height"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/text_commande_fillup"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="14dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/layout_full"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_circle_full_1"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/img_full"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/full_text"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/text_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/text_full"
+                    android:textColor="@color/gris"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_full_resume"
+                    android:textSize="@dimen/size_small"
+                    android:textColor="@color/gris"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/limite_inf_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 €"
+                    android:textColor="@color/gris" />
+
+                <TextView
+                    android:id="@+id/value_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/gris" />
+
+                <TextView
+                    android:id="@+id/limite_sup_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="100 €"
+                    android:textColor="@color/gris" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/limite_sup_price"
+                    android:layout_marginTop="5dp"
+                    android:max="19"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/price_liter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/seekbar_price"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gris" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/up_commande_container"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/login_padding_left"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:padding="@dimen/expendable_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_blue" />
+</RelativeLayout>

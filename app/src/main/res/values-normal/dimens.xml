@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--text size-->
+    <dimen name="size_small">14sp</dimen>
+
+    <dimen name="margin_order">40dp</dimen>
+</resources>

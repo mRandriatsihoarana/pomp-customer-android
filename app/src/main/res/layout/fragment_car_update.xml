@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_green" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_padding_left"
+                    android:layout_marginRight="@dimen/login_padding_left"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="26dp"
+                        android:src="@drawable/car_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_marque"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:id="@+id/update_car_marque"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint="@string/hint_marque"
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gris" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_type"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:id="@+id/update_car_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint="@string/hint_type"
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gris" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_immatriculation"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:id="@+id/update_car_immatriculation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint="@string/hint_immatriculation"
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gris" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_carburant"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint=" "
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                        <Spinner
+                            android:id="@+id/update_car_carburant_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|end"
+                            android:paddingLeft="5dp"
+                            android:spinnerMode="dropdown"
+                            android:textAlignment="textEnd" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gris" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_couleur"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:id="@+id/update_car_couleur"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint="@string/hint_couleur"
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gris"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/login_padding_left"
+                        android:paddingRight="@dimen/login_padding_left"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/text_reservoir"
+                            android:textColor="@color/gris"
+                            android:textSize="@dimen/size_small" />
+
+                        <EditText
+                            android:id="@+id/update_car_reservoir"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:hint="@string/hint_reservoir"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/gris_claire"
+                            android:textColorHint="@color/gris_claire"
+                            android:textSize="@dimen/size_small" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/update_car_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:layout_gravity="bottom"
+                android:background="@drawable/selector_order"
+                android:text="@string/button_update_car"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

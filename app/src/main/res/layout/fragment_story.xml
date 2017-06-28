@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="fr.pomp.adfuell.fragment.StoryFragment">
+
+   <ListView
+       android:id="@+id/story_list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone">
+
+   </ListView>
+
+   <RelativeLayout
+       android:id="@+id/story_list_empty_msg"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="@dimen/header_height"
+       android:background="@color/white"
+       android:visibility="gone">
+
+      <ImageView
+          android:id="@+id/car_list_img_empty"
+          android:layout_width="71dp"
+          android:layout_height="87dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="131dp"
+          android:background="@drawable/bid" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/car_list_img_empty"
+          android:layout_centerHorizontal="true"
+          android:text="@string/text_history_empty"
+          android:textColor="@color/gris"
+          android:textSize="@dimen/size_small"
+          android:layout_marginTop="20dp"
+          android:textAlignment="center"/>
+   </RelativeLayout>
+
+</RelativeLayout>

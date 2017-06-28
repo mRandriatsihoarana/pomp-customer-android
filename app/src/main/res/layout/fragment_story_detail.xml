@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="111dp"
+            android:src="@drawable/map_loc" />
+
+        <TextView
+            android:id="@+id/story_adress"
+            style="@style/style_story_detail_text" />
+
+        <View style="@style/style_story_detail_separtor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/story_parking"
+                style="@style/textview_custom_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_place" />
+
+            <EditText
+                android:id="@+id/edt_place"
+                style="@style/style_story_detail_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_place"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/story_parking"
+            android:text="@string/text_place"
+            style="@style/style_story_detail_text" />-->
+
+        <View style="@style/style_story_detail_separtor" />
+
+        <TextView
+            android:id="@+id/story_status"
+            style="@style/style_story_detail_text"
+            android:visibility="gone"/>
+
+        <View style="@style/style_story_detail_separtor"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/story_date"
+            style="@style/style_story_detail_text" />
+
+        <View style="@style/style_story_detail_separtor" />
+
+        <TextView
+            android:id="@+id/story_fuel"
+            style="@style/style_story_detail_text" />
+
+        <View style="@style/style_story_detail_separtor" />
+
+        <TextView
+            android:id="@+id/story_vehicule"
+            style="@style/style_story_detail_text" />
+
+        <View style="@style/style_story_detail_separtor" />
+
+        <TextView
+            android:id="@+id/story_prix"
+            style="@style/style_story_detail_text" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_order"
+            android:minHeight="@dimen/textview_height"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/text_commande_cancelled_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_order"
+            android:minHeight="@dimen/textview_height"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/text_commande_update_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

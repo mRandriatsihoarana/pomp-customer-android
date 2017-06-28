@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/expendable_padding">
+
+        <LinearLayout
+            android:id="@+id/up_header_localisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_car"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="55dp"
+                android:src="@drawable/localisation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_localisation"
+                android:textColor="@color/gris_fonce"
+                android:textSize="@dimen/size_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/localisation_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/textview_custom_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/text_message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_horaire"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/header_height"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <EditText
+                    android:id="@+id/edt_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Votre message"
+                    android:textColor="@color/gris"
+                    android:textSize="@dimen/size_small" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_message"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_order"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Envoyer"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/localisation_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_padding_left"
+            android:layout_marginRight="@dimen/login_padding_left"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_entreprise" />
+
+                <EditText
+                    android:id="@+id/edt_entreprise"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_entreprise"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_parking" />
+
+                <Spinner
+                    android:id="@+id/spn_parking"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:entries="@array/array_parking"
+                    android:gravity="right|end"
+                    android:paddingLeft="5dp"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="textEnd"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_parking"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_parking"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_place" />
+
+                <EditText
+                    android:id="@+id/edt_place"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/hint_place"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/login_padding_left"
+                android:paddingRight="@dimen/login_padding_left"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/textview_custom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_note" />
+
+                <EditText
+                    android:id="@+id/edt_note"
+                    style="@style/edittext_custom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textview_height"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/hint_note"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gris" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/up_localisation_container"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/login_padding_left"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:padding="@dimen/expendable_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_blue" />
+</RelativeLayout>

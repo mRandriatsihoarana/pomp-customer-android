@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="acr-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/3f73a3824d8aedde511361ac19967e868173e111/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3f73a3824d8aedde511361ac19967e868173e111/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.devs/acr/1.0.1/bea36cee39cf99dd99674d7e1131c9baca43317f/acr-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

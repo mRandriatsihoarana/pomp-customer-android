@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.v4.widget.DrawerLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_drawer"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_green">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include android:id="@+id/header" layout="@layout/view_header" />
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="intercom"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="@dimen/slide_width"
+        android:layout_gravity="start"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_menu_fragment"
+            android:name="fr.pomp.adfuell.fragment.MenuSliderFragment">
+
+        </fragment>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/main_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:background="#99CCCCCC">
+        <com.github.ybq.android.spinkit.SpinKitView
+
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            app:SpinKit_Color="@color/color_loading"
+            android:visibility="gone"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading"
+            />
+    </RelativeLayout>
+</RelativeLayout>

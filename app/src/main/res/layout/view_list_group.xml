@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/login_padding_left"
+    android:layout_marginRight="@dimen/login_padding_left"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pin" />
+
+    <TextView
+        android:id="@+id/confirmation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ma localisation"
+        android:textColor="@color/gris"
+        android:paddingLeft="@dimen/login_padding_left"/>
+
+</LinearLayout>
